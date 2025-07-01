@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Cases;
+import Victims.Victim;
 import java.time.LocalDate;
 
 /**
@@ -11,7 +12,7 @@ import java.time.LocalDate;
  */
 public class Case {
     private int id;
-    private String victim;
+    private Victim victim;
     private String decription;
     private String type;
     private LocalDate date;
@@ -21,7 +22,7 @@ public class Case {
         return id;
     }
 
-    public String getVictim() {
+    public Victim getVictim() {
         return victim;
     }
 
@@ -49,7 +50,7 @@ public class Case {
         this.type = type;
     }
 
-    public Case(int id, String victim, String decription, String type) {
+    public Case(int id, Victim victim, String decription, String type) {
         this.id = id;
         this.victim = victim;
         this.decription = decription;
